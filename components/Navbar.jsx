@@ -11,6 +11,10 @@ const Navbar = () => {
       <p className="logo">
         <Link href="/">THE AUDIO SHOP</Link>
       </p>
+      <p className="logo all-products-wrapper">
+        <Link href="/products">All Products</Link>
+      </p>
+
       <button
         type="button"
         className="cart-icon"

@@ -131,7 +131,13 @@ span.text-red {
 
 .hero-banner-container {
   padding: 100px 40px;
-  background-color: #dcdcdc;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
   border-radius: 15px;
   position: relative;
   height: 500px;
@@ -144,7 +150,7 @@ span.text-red {
 .hero-banner-container button {
   border-radius: 15px;
   padding: 10px 16px;
-  background-color: #e2242a;
+  background-color: #000000;
   color: white;
   border: none;
   margin-top: 40px;
@@ -154,7 +160,12 @@ span.text-red {
   z-index: 10000 !important;
 }
 .hero-banner-container button:hover {
-  background-color: #ff0000;
+  background-color: #f9f8f8;
+  color: #000000;
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
 }
 
 .hero-banner-container h3 {
@@ -216,7 +227,14 @@ span.text-red {
 }
 .footer-banner-container {
   padding: 100px 40px;
-  background-color: #2d71f0;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+
   border-radius: 15px;
   position: relative;
   height: 400px;
@@ -233,7 +251,7 @@ span.text-red {
   border-radius: 15px;
   padding: 10px 16px;
   background-color: white;
-  color: rgb(0, 115, 255);
+  color: rgb(0, 0, 0);
   border: none;
   margin-top: 40px;
   font-size: 18px;
@@ -242,7 +260,13 @@ span.text-red {
 }
 .banner-desc button:hover {
   background-color: #1e0c2c;
+  color: white;
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
 }
+
 .banner-desc .left h3 {
   font-weight: 900;
   font-size: 80px;
@@ -760,5 +784,12 @@ span.text-red {
   .btn-container {
     width: 300px;
     margin: auto;
+  }
+  .all-products-wrapper {
+    color: gray;
+  }
+  .all-products-wrapper p {
+    text-align: center;
+    font-size: 18px;
   }
 }

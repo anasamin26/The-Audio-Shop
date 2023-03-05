@@ -20,6 +20,7 @@ const Cart = () => {
     cartItems,
     setshowCart,
     onRemove,
+    settotalQuantities,
   } = useStateContext();
 
   const handleCheckout = async () => {
@@ -37,6 +38,7 @@ const Cart = () => {
     toast.loading("Redirecting...");
     stripe.redirectToCheckout({ sessionId: data.id });
   };
+
   return (
     <div className="cart-wrapper" ref={carRef}>
       <div className="cart-container">
