@@ -787,6 +787,7 @@ span.text-red {
   }
   .all-products-wrapper {
     color: gray;
+    margin-right: 100px;
   }
   .all-products-wrapper p {
     text-align: center;

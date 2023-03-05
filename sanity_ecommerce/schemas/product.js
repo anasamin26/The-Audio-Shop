@@ -41,5 +41,10 @@ export default {
       title: 'Category',
       type: 'string',
     },
+    {
+      name: 'inDemand',
+      title: 'inDemand',
+      type: 'string',
+    },
   ],
 }
