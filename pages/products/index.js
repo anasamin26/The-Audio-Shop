@@ -20,7 +20,6 @@ const index = ({
   //   Wiredheadphone.length > 0 ? setwiredhead(true) : setwiredhead(false);
   //   Bluetoothspeaker.length > 0 ? setspeaker(true) : setspeaker(false);
   // }, []);
-  const [visibleSections, setVisibleSections] = React.useState([]);
   function reveal() {
     var reveals = document.querySelectorAll(".reveal");
 
