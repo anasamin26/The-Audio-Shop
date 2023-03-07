@@ -683,7 +683,17 @@ span.text-red {
 .product-max-qty {
   margin-top: 10px;
 }
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
 
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
 @media screen and (max-width: 800px) {
   .hero-banner-container {
     height: 560px;
@@ -833,21 +843,26 @@ span.text-red {
     text-align: center;
     font-size: 18px;
   }
+  .video-container {
+    height: 100%;
+  }
   @media only screen and (max-width: 480px) {
     /* hide element on small screens */
+    .footer-banner-container {
+      height: 560px;
+      margin-top: 80px;
+    }
     .footer-banner-image {
       top: -15%;
-      margin-right: 10px;
-      right: 5%;
       width: 50%;
-      height: 40%;
+      height: 35%;
     }
     .hero-banner-container {
       display: flex;
     }
     .hero-banner-image {
       width: 50%;
-      height: 40%;
+      height: 35%;
       top: 45%;
       right: -3%;
     }
@@ -861,7 +876,7 @@ span.text-red {
       background-color: white;
       color: rgb(0, 0, 0);
       border: none;
-      margin-top: 20px;
+      margin-top: 5px;
       font-size: 18px;
       font-weight: 500;
       cursor: pointer;
@@ -902,6 +917,12 @@ span.text-red {
       right: 5%;
       width: 325px;
       height: 325px;
+    }
+    .video-container {
+      width: 370px;
+
+      margin-right: 5px;
+      border-radius: 2%;
     }
   }
 

@@ -20,13 +20,31 @@ const index = ({
   //   Wiredheadphone.length > 0 ? setwiredhead(true) : setwiredhead(false);
   //   Bluetoothspeaker.length > 0 ? setspeaker(true) : setspeaker(false);
   // }, []);
+  const [visibleSections, setVisibleSections] = React.useState([]);
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
 
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", reveal);
+  }
   return (
     <>
       <div className="products-heading">
         <h2 className="font-best">Wireless Earbuds</h2>
       </div>
-      <div className="products-container">
+      <div className="products-container reveal">
         {Wirelessearphone?.map((product) => (
           <Product key={product._id} product={product} />
         ))}
@@ -35,7 +53,7 @@ const index = ({
       <div className="products-heading">
         <h2 className="font-best">Wireless Headphones</h2>
       </div>
-      <div className="products-container">
+      <div className="products-container reveal">
         {Wirelessheadphone?.map((product) => (
           <Product key={product._id} product={product} />
         ))}
@@ -43,23 +61,23 @@ const index = ({
       <div className="products-heading">
         <h2 className="font-best">Bluetooth Speaker</h2>
       </div>
-      <div className="products-container">
+      <div className="products-container reveal">
         {Bluetoothspeaker?.map((product) => (
           <Product key={product._id} product={product} />
         ))}
       </div>
       <div className="products-heading">
-        <h2 className="font-best">Wired Earbuds</h2>
+        <h2 className="font-best">Classic Earbuds</h2>
       </div>
-      <div className="products-container">
+      <div className="products-container reveal">
         {Wiredearphone?.map((product) => (
           <Product key={product._id} product={product} />
         ))}
       </div>
       <div className="products-heading">
-        <h2 className="font-best">Wired Headphones</h2>
+        <h2 className="font-best">Classic Headphones</h2>
       </div>
-      <div className="products-container">
+      <div className="products-container reveal">
         {Wiredheadphone?.map((product) => (
           <Product key={product._id} product={product} />
         ))}
