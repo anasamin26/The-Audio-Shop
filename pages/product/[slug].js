@@ -129,17 +129,19 @@ const ProductDetails = ({ product, products }) => {
           </div>
         </div>
       </div>
-      <div>
-        <video
-          ref={videoRef}
-          className="video-container"
-          style={getVideoStyle(opacity)}
-          onMouseEnter={() => setOpacity(0.8)}
-          onMouseLeave={() => setOpacity(1)}
-          src={product.generatedVideoURL.current}
-          controls
-        />
-      </div>
+      {product.generatedVideoURL ? (
+        <div>
+          <video
+            ref={videoRef}
+            className="video-container"
+            style={getVideoStyle(opacity)}
+            onMouseEnter={() => setOpacity(0.8)}
+            onMouseLeave={() => setOpacity(1)}
+            src={product.generatedVideoURL.current}
+            controls
+          />
+        </div>
+      ) : null}
       <div className="maylike-products-wrapper">
         <h2 className="font-best">You may also like</h2>
         <div className="marquee">
