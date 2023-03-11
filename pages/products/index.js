@@ -40,46 +40,48 @@ const index = ({
   }
   return (
     <>
-      <div className="products-heading ">
-        <h2 className="font-best">Wireless Earbuds</h2>
-      </div>
-      <div className="products-container ">
-        {Wirelessearphone?.map((product) => (
-          <Product key={product._id} product={product} />
-        ))}
-      </div>
+      <div className="products-container">
+        <div className="products-heading ">
+          <h2 className="font-best">Wireless Earbuds</h2>
+        </div>
+        <div className="products-container ">
+          {Wirelessearphone?.map((product) => (
+            <Product key={product._id} product={product} />
+          ))}
+        </div>
 
-      <div className="products-heading ">
-        <h2 className="font-best">Wireless Headphones</h2>
-      </div>
-      <div className="products-container reveal ">
-        {Wirelessheadphone?.map((product) => (
-          <Product key={product._id} product={product} />
-        ))}
-      </div>
-      <div className="products-heading ">
-        <h2 className="font-best">Bluetooth Speaker</h2>
-      </div>
-      <div className="products-container reveal ">
-        {Bluetoothspeaker?.map((product) => (
-          <Product key={product._id} product={product} />
-        ))}
-      </div>
-      <div className="products-heading ">
-        <h2 className="font-best">Classic Earbuds</h2>
-      </div>
-      <div className="products-container reveal ">
-        {Wiredearphone?.map((product) => (
-          <Product key={product._id} product={product} />
-        ))}
-      </div>
-      <div className="products-heading ">
-        <h2 className="font-best">Classic Headphones</h2>
-      </div>
-      <div className="products-container reveal ">
-        {Wiredheadphone?.map((product) => (
-          <Product key={product._id} product={product} />
-        ))}
+        <div className="products-heading ">
+          <h2 className="font-best">Wireless Headphones</h2>
+        </div>
+        <div className="products-container reveal ">
+          {Wirelessheadphone?.map((product) => (
+            <Product key={product._id} product={product} />
+          ))}
+        </div>
+        <div className="products-heading ">
+          <h2 className="font-best">Bluetooth Speaker</h2>
+        </div>
+        <div className="products-container reveal ">
+          {Bluetoothspeaker?.map((product) => (
+            <Product key={product._id} product={product} />
+          ))}
+        </div>
+        <div className="products-heading ">
+          <h2 className="font-best">Classic Earbuds</h2>
+        </div>
+        <div className="products-container reveal ">
+          {Wiredearphone?.map((product) => (
+            <Product key={product._id} product={product} />
+          ))}
+        </div>
+        <div className="products-heading ">
+          <h2 className="font-best">Classic Headphones</h2>
+        </div>
+        <div className="products-container reveal ">
+          {Wiredheadphone?.map((product) => (
+            <Product key={product._id} product={product} />
+          ))}
+        </div>
       </div>
     </>
   );
