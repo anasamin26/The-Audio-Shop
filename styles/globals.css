@@ -155,16 +155,18 @@ a {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
+  margin-left: 30px;
 }
 
 .footer-list {
-  list-style: none;
+  list-style: disc;
   margin: 0;
   padding: 0;
 }
 
 .footer-item {
   margin-bottom: 10px;
+  margin-left: 40px;
 }
 
 .footer-link {
@@ -175,7 +177,7 @@ a {
   color: #ffd700;
 }
 .footer-text {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   justify-content: center;
 }
 .ftext {
@@ -677,10 +679,11 @@ span.text-red {
   transform: scale(1.1, 1.1);
 }
 .product-detail-container {
+  margin-top: 50px;
   display: flex;
   gap: 40px;
   margin: 40px;
-  margin-top: 60px;
+  margin-top: 100px;
   color: #000000;
 }
 
@@ -1261,7 +1264,131 @@ span.text-red {
     }
   }
 }
-@media only screen and (min-width: 800px) and (max-width: 1200px) {
+@media only screen and (width: 768px) and (height: 1024px) {
+  .hero-banner-container {
+    margin-top: 100px;
+    padding: 100px 40px;
+    background-color: #4158d0;
+    background-image: linear-gradient(
+      43deg,
+      #4158d0 0%,
+      #c850c0 46%,
+      #ffcc70 100%
+    );
+    border-radius: 15px;
+    position: relative;
+    height: 500px;
+    line-height: 0.9;
+    width: 100%;
+  }
+  .hero-banner-container .beats-solo {
+    font-size: 20px;
+  }
+  .hero-banner-container button {
+    border-radius: 15px;
+    padding: 10px 16px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 10000 !important;
+  }
+  .hero-banner-image {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 350px;
+    height: 350px;
+  }
+
+  .footer-banner-container {
+    padding: 100px 40px;
+    background-color: #4158d0;
+    background-image: linear-gradient(
+      43deg,
+      #4158d0 0%,
+      #c850c0 46%,
+      #ffcc70 100%
+    );
+
+    border-radius: 15px;
+    position: relative;
+    height: 500px;
+    line-height: 1;
+    color: white;
+    width: 100%;
+    margin-top: 120px;
+  }
+  .banner-desc {
+    display: flex;
+    justify-content: space-between;
+  }
+  .banner-desc button {
+    border-radius: 15px;
+    padding: 10px 16px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 100px;
+  }
+  .banner-desc button:hover {
+    background-color: #1e0c2c;
+    color: white;
+    -webkit-transition: background-color 0.4s ease-out;
+    -moz-transition: background-color 0.4s ease-out;
+    -o-transition: background-color 0.4s ease-out;
+    transition: background-color 0.4s ease-out;
+  }
+  .banner-desc .left h3 {
+    font-weight: 900;
+    font-size: 50px;
+    margin-left: 5px;
+  }
+  .banner-desc .left p {
+    margin: 18px;
+  }
+  .banner-desc .right h3 {
+    font-size: 45px;
+    margin-top: 0px;
+  }
+  .banner-desc .right p {
+    font-size: 18px;
+    margin-top: 30px;
+  }
+  .banner-desc .right .company-desc {
+    font-size: 14px;
+  }
+  .banner-desc {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .footer-banner-image {
+    position: absolute;
+    /* top: -35%;
+    left: 8%; */
+    width: 300px;
+    height: 300px;
+    top: -28%;
+    left: 55%;
+  }
+  .product-detail-container {
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+    margin: 40px;
+    margin-top: 100px;
+    color: #000000;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-height: 1200px) {
   .hero-banner-container {
     margin-top: 100px;
     padding: 100px 40px;
@@ -1362,5 +1489,274 @@ span.text-red {
     height: 350px;
     top: -35%;
     left: 10%;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-height: 1400px) {
+  .hero-banner-container {
+    margin-top: 100px;
+    padding: 100px 40px;
+    background-color: #4158d0;
+    background-image: linear-gradient(
+      43deg,
+      #4158d0 0%,
+      #c850c0 46%,
+      #ffcc70 100%
+    );
+    border-radius: 15px;
+    position: relative;
+    height: 500px;
+    line-height: 0.9;
+    width: 100%;
+  }
+  .hero-banner-container .beats-solo {
+    font-size: 20px;
+  }
+  .hero-banner-container button {
+    border-radius: 15px;
+    padding: 10px 16px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    margin-top: -50px;
+    margin-left: 300px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 10000 !important;
+  }
+  .hero-banner-image {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 350px;
+    height: 350px;
+  }
+
+  .footer-banner-container {
+    padding: 100px 40px;
+    background-color: #4158d0;
+    background-image: linear-gradient(
+      43deg,
+      #4158d0 0%,
+      #c850c0 46%,
+      #ffcc70 100%
+    );
+
+    border-radius: 15px;
+    position: relative;
+    height: 400px;
+    line-height: 1;
+    color: white;
+    width: 100%;
+    margin-top: 120px;
+  }
+  .banner-desc {
+    display: flex;
+    justify-content: space-between;
+  }
+  .banner-desc button {
+    border-radius: 15px;
+    padding: 10px 16px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: none;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 100px;
+    top: -40%;
+  }
+  .banner-desc button:hover {
+    background-color: #1e0c2c;
+    color: white;
+    -webkit-transition: background-color 0.4s ease-out;
+    -moz-transition: background-color 0.4s ease-out;
+    -o-transition: background-color 0.4s ease-out;
+    transition: background-color 0.4s ease-out;
+  }
+
+  .banner-desc .left h3 {
+    font-weight: 900;
+    font-size: 50px;
+    margin-left: 5px;
+  }
+  .banner-desc .left p {
+    margin: 18px;
+  }
+  .banner-desc .right h3 {
+    font-size: 45px;
+    margin-top: 0px;
+  }
+  .banner-desc .right p {
+    font-size: 18px;
+    margin-top: 40px;
+  }
+  .banner-desc .right .company-desc {
+    font-size: 14px;
+  }
+  .banner-desc {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .footer-banner-image {
+    position: absolute;
+    /* top: -35%;
+    left: 8%; */
+    width: 350px;
+    height: 350px;
+    top: -45%;
+    left: 53%;
+  }
+  .aboutus-container {
+    margin-top: 80px;
+  }
+  .aboutus-container-image {
+    position: relative;
+    top: 20%;
+    bottom: 20%;
+    right: -27%;
+    width: 350px;
+    height: 350px;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 742px) and (max-height: 1400px) {
+  .hero-banner-container {
+    margin-top: 100px;
+    padding: 100px 40px;
+    background-color: #4158d0;
+    background-image: linear-gradient(
+      43deg,
+      #4158d0 0%,
+      #c850c0 46%,
+      #ffcc70 100%
+    );
+    border-radius: 15px;
+    position: relative;
+    height: 500px;
+    line-height: 0.9;
+    width: 100%;
+  }
+  .hero-banner-container .beats-solo {
+    font-size: 20px;
+  }
+  .hero-banner-container button {
+    border-radius: 15px;
+    padding: 10px 16px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    margin-top: 25px;
+    margin-left: 39px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 10000 !important;
+  }
+  .hero-banner-image {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 350px;
+    height: 350px;
+  }
+
+  .footer-banner-container {
+    padding: 100px 40px;
+    background-color: #4158d0;
+    background-image: linear-gradient(
+      43deg,
+      #4158d0 0%,
+      #c850c0 46%,
+      #ffcc70 100%
+    );
+
+    border-radius: 15px;
+    position: relative;
+    height: 400px;
+    line-height: 1;
+    color: white;
+    width: 100%;
+    margin-top: 120px;
+  }
+  .banner-desc {
+    display: flex;
+    justify-content: space-between;
+  }
+  .banner-desc button {
+    border-radius: 15px;
+    padding: 10px 16px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: none;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 100px;
+    top: -40%;
+  }
+  .banner-desc button:hover {
+    background-color: #1e0c2c;
+    color: white;
+    -webkit-transition: background-color 0.4s ease-out;
+    -moz-transition: background-color 0.4s ease-out;
+    -o-transition: background-color 0.4s ease-out;
+    transition: background-color 0.4s ease-out;
+  }
+
+  .banner-desc .left h3 {
+    font-weight: 900;
+    font-size: 50px;
+    margin-left: 5px;
+  }
+  .banner-desc .left p {
+    margin: 18px;
+  }
+  .banner-desc .right h3 {
+    font-size: 45px;
+    margin-top: 0px;
+  }
+  .banner-desc .right p {
+    font-size: 18px;
+    margin-top: 40px;
+  }
+  .banner-desc .right .company-desc {
+    font-size: 14px;
+  }
+  .banner-desc {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .footer-banner-image {
+    position: absolute;
+    /* top: -35%;
+    left: 8%; */
+    width: 350px;
+    height: 350px;
+    top: -45%;
+    left: 53%;
+  }
+  .aboutus-container {
+    margin-top: 80px;
+  }
+  .aboutus-container-image {
+    position: relative;
+    top: 20%;
+    bottom: 20%;
+    right: -27%;
+    width: 350px;
+    height: 350px;
+    align-items: center;
+  }
+  .ftext {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 230px;
+    width: 180px;
   }
 }
