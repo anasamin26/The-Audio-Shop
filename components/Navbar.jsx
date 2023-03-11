@@ -51,14 +51,14 @@ const Navbar = () => {
       </button>
       <ul className={`navbar__list ${isMenuOpen ? "navbar__list--open" : ""}`}>
         <li className="navbar__item">
-          <a href="/aboutus" className="navbar__link">
+          <Link href="/aboutus" className="navbar__link">
             About
-          </a>
+          </Link>
         </li>
         <li className="navbar__item">
-          <a href="/products" className="navbar__link">
+          <Link href="/products" className="navbar__link">
             Shop
-          </a>
+          </Link>
         </li>
         <li className="navbar__item">
           <div className="navbar-rigth">
