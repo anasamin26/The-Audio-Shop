@@ -40,7 +40,7 @@ const index = ({
   }
   return (
     <>
-      <div className="products-heading reveal">
+      <div className="products-heading ">
         <h2 className="font-best">Wireless Earbuds</h2>
       </div>
       <div className="products-container ">
