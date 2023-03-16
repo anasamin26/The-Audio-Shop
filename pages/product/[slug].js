@@ -102,7 +102,9 @@ const ProductDetails = ({ product, products }) => {
           </div>
           <h4>Details: </h4>
           <p>{details}</p>
+          <h3>Price</h3>
           <p className="price">${price}</p>
+
           <div className="quantity">
             <h3>Quantity</h3>
             <p className="quantity-desc">
