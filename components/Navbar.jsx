@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-
+import { useTheme } from "next-themes";
+import { DarkModeToggle } from "@anatoliygatt/dark-mode-toggle";
 import { AiOutlineShopping } from "react-icons/ai";
-import { AiFillAudio } from "react-icons/ai";
 import { Cart } from ".";
 import { useStateContext } from "@/context/StateContext";
 import { BsHeadphones } from "react-icons/bs";
@@ -34,7 +34,10 @@ const Navbar = () => {
   const handleToggleClick = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const { systemTheme, theme, setTheme } = useTheme();
+  const [mode, setMode] = useState("dark");
 
+  const currentTheme = theme === "system" ? systemTheme : theme;
   return (
     <nav
       className={`navbar ${
@@ -59,6 +62,28 @@ const Navbar = () => {
           <Link href="/products" className="navbar__link">
             Shop
           </Link>
+        </li>
+        <li className="navbar__item">
+          <DarkModeToggle
+            mode={mode}
+            dark="Dark"
+            light="Light"
+            className="bg-black dark:bg-black hover:bg-black dark:hover:bg-black transition-all duration-100 text-white dark:text-black px-8 py-2 text-2xl md:text-4xl rounded-lg text-3xl text-pink-500 absolute bottom-32"
+            size="sm"
+            inactiveTrackColor="#e2e8f0"
+            inactiveTrackColorOnHover="#f8fafc"
+            inactiveTrackColorOnActive="#cbd5e1"
+            activeTrackC
+            olor="#334155"
+            activeTrackColorOnHover="#1e293b"
+            activeTrackColorOnActive="#0f172a"
+            inactiveThumbColor="#1e293b"
+            activeThumbColor="#e2e8f0"
+            onChange={(mode) => {
+              theme == "dark" ? setTheme("light") : setTheme("dark");
+              setMode(mode);
+            }}
+          />
         </li>
         <li className="navbar__item">
           <div className="navbar-rigth">

@@ -142,10 +142,10 @@ const ProductDetails = ({ product, products }) => {
           />
         </div>
       ) : null}
-      <div className="maylike-products-wrapper">
+      <div className="maylike-products-wrapper ">
         <h2 className="font-best">You may also like</h2>
         <div className="marquee">
-          <div className="maylike-products-container track">
+          <div className="maylike-products-container  track">
             {products.map((item) => {
               if (product._id !== item._id)
                 return <Product key={item._id} product={item} />;
