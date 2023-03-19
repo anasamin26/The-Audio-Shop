@@ -104,6 +104,21 @@ a {
   background-color: #2a2c30;
   color: #ffffff;
 }
+.butttns {
+  border-radius: 15px;
+  padding: 6px 8px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  z-index: 10000 !important;
+}
+.buttons:hover {
+  background-color: white;
+  color: black;
+}
 .login-menu-button {
   display: block;
   margin-top: 10px;

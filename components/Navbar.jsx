@@ -109,11 +109,11 @@ const Navbar = () => {
           <div>
             <div>
               {session && session.user ? (
-                <button onClick={() => signOut()} className="butttn">
+                <button onClick={() => signOut()} className="butttns">
                   Sign out
                 </button>
               ) : (
-                <button onClick={() => signIn()} className="butttn">
+                <button onClick={() => signIn()} className="butttns">
                   Sign in
                 </button>
               )}
