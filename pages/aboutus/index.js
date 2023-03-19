@@ -1,5 +1,5 @@
 import React from "react";
-import { client, urlFor } from "@/lib/client";
+import { client, urlFor } from "../../lib/client";
 const index = ({ bannerData }) => {
   return (
     <>

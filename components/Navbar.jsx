@@ -5,8 +5,11 @@ import { useTheme } from "next-themes";
 import { DarkModeToggle } from "@anatoliygatt/dark-mode-toggle";
 import { AiOutlineShopping } from "react-icons/ai";
 import { Cart } from ".";
-import { useStateContext } from "@/context/StateContext";
+import { useStateContext } from "../context/StateContext";
 import { BsHeadphones } from "react-icons/bs";
+import { NextPage } from "next";
+import { useSession, signIn, signOut } from "next-auth/react";
+
 const Navbar = () => {
   const { showCart, setshowCart, totalQuantities } = useStateContext();
   const navigationRoutes = ["home", "aboutus", "products"];
@@ -14,6 +17,7 @@ const Navbar = () => {
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { data: session } = useSession();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -100,6 +104,21 @@ const Navbar = () => {
             </button>
           </div>
           {showCart && <Cart />}
+        </li>
+        <li className="navber__item">
+          <div>
+            <div>
+              {session && session.user ? (
+                <button onClick={() => signOut()} className="butttn">
+                  Sign out
+                </button>
+              ) : (
+                <button onClick={() => signIn()} className="butttn">
+                  Sign in
+                </button>
+              )}
+            </div>
+          </div>
         </li>
       </ul>
     </nav>

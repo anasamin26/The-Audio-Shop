@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Product } from "@/components";
-import { client } from "@/lib/client";
+import { Product } from "../../components";
+import { client } from "../../lib/client";
+
 const index = ({
   Wiredheadphone,
   Wirelessheadphone,

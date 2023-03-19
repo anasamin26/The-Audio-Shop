@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { client, urlFor } from "@/lib/client";
+import { client, urlFor } from "../../lib/client";
 import {
   AiOutlineMinus,
   AiOutlinePlus,
