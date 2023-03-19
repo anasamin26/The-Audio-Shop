@@ -687,9 +687,10 @@ span.text-red {
 }
 .aboutus-container-image {
   position: relative;
-  top: 20%;
-  bottom: 20%;
-  right: -37%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
   width: 350px;
   height: 350px;
 }
