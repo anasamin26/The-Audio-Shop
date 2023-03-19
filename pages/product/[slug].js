@@ -6,7 +6,7 @@ import {
   AiFillStar,
   AiOutlineStar,
 } from "react-icons/ai";
-import { Product } from "@/components";
+import { Product } from "../../components";
 import { useStateContext } from "../../context/StateContext";
 import { render } from "react-dom";
 const ProductDetails = ({ product, products }) => {
