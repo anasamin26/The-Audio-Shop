@@ -13,8 +13,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "typeRoots": ["node_modules/@types"],
-    "types": ["gapi", "gapi.auth2", "gapi.client.gmail"]
+    "typeRoots": ["node_modules/@types"]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
