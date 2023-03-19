@@ -54,7 +54,7 @@ const Signin = () => {
               Sign In
             </button>
             <div class="signin-signup-link">
-              Don`&apos;`t have an account? <Link href="/signup">Sign Up</Link>
+              Don&apos;t have an account? <Link href="/signup">Sign Up</Link>
             </div>
           </form>
           {providers &&
