@@ -1571,7 +1571,7 @@ span.text-red {
   }
 
   .navbar__list--open {
-    height: 200px; /* Adjust this value to change the height of the menu */
+    height: 300px; /* Adjust this value to change the height of the menu */
   }
 
   .navbar__item {

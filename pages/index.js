@@ -5,7 +5,7 @@ import { useSession, signIn, signOut } from "next-auth/react";
 import { Navbar } from "../components";
 import Signin from "./auth/signin";
 
-const index = ({ products, bannerData }) => {
+const Index = ({ products, bannerData }) => {
   const { data: session } = useSession();
 
   return (
@@ -46,4 +46,4 @@ export const getServerSideProps = async () => {
     props: { products, bannerData },
   };
 };
-export default index;
+export default Index;
